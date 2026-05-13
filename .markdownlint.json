@@ -1,0 +1,13 @@
+{
+  "default": true,
+  "MD003": { "style": "atx" },
+  "MD004": { "style": "dash" },
+  "MD013": false,
+  "MD024": { "siblings_only": true },
+  "MD025": { "front_matter_title": "" },
+  "MD026": { "punctuation": ".,;:!" },
+  "MD029": { "style": "ordered" },
+  "MD033": { "allowed_elements": ["br", "details", "summary"] },
+  "MD036": false,
+  "MD041": false
+}

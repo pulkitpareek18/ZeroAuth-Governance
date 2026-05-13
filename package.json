@@ -1,0 +1,20 @@
+{
+  "name": "zeroauth-governance",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cross-repo source of truth for ZeroAuth security policy, compliance mappings, threat model, ADR index, release coordination, and evidence pack sources. Documentation only — no product code.",
+  "license": "CC-BY-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pulkitpareek18/ZeroAuth-Governance.git"
+  },
+  "scripts": {
+    "lint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.github\"",
+    "check-links": "markdown-link-check -q -c .markdown-link-check.json $(git ls-files '*.md')",
+    "check-checksums": "node scripts/check-checksums.js"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.13.0",
+    "markdown-link-check": "^3.12.2"
+  }
+}

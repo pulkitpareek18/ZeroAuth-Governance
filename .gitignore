@@ -1,0 +1,11 @@
+node_modules/
+*.log
+.DS_Store
+.env
+.env.local
+dist/
+.vscode/
+.idea/
+
+# We intentionally do NOT gitignore lockfiles — markdownlint + remark
+# are tools the CI uses; their lockfile is part of the repo.

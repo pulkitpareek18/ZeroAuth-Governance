@@ -1,0 +1,40 @@
+# ZeroAuth Governance — Code Owners
+#
+# Path-based ownership. Every PR is reviewed by at least one owner of every
+# path it touches. For files under `docs/shared/` and `docs/compliance/`, two
+# reviewers are required (Pulkit + Amit; counsel as well for DPDP-touching).
+#
+# Counsel review is enforced manually (not via CODEOWNERS) because counsel
+# does not have GitHub access; reviewers note counsel sign-off in the PR
+# description before merging policy-touching changes.
+
+# Default — every file
+*                                       @pulkitpareek18
+
+# Repo constitution + readme
+/CLAUDE.md                              @pulkitpareek18 @AmitDua
+/README.md                              @pulkitpareek18 @AmitDua
+
+# Shared policy — two-reviewer rule
+/docs/shared/                           @pulkitpareek18 @AmitDua
+/docs/shared/breach-notification.md     @pulkitpareek18 @AmitDua
+/docs/shared/security-policy.md         @pulkitpareek18 @AmitDua
+
+# Threat model — Pulkit (technical) + Amit (governance signoff)
+/docs/threat-model/                     @pulkitpareek18 @AmitDua
+/docs/threat-model/canonical.md         @pulkitpareek18 @AmitDua
+
+# Compliance — Pulkit + Amit + counsel signoff in PR
+/docs/compliance/                       @pulkitpareek18 @AmitDua
+
+# ADR index — anyone with merge rights, but Pulkit reviews
+/adr-index/                             @pulkitpareek18
+
+# Release coordination — Pulkit (engineering) calls the matrix
+/release-coordination/                  @pulkitpareek18
+
+# Evidence pack sources — Pulkit
+/evidence-pack-sources/                 @pulkitpareek18
+
+# Workflows + repo plumbing — Pulkit
+/.github/                               @pulkitpareek18
