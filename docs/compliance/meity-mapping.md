@@ -19,7 +19,7 @@ MeitY's advisories apply broadly to Indian intermediaries; specific directives (
 | Report listed cyber incidents to CERT-In within 6 hours of noticing | See [`../shared/breach-notification.md`](../shared/breach-notification.md) §5. | **Implemented (procedure)** |
 | Retain ICT system logs for 180 days minimum | Audit logs retained 7 years (exceeds requirement). System logs (nginx / Caddy / Postgres / Docker) retained: **TODO — confirm retention on VPS**. | **Partial** |
 | Categories of incidents to report (see directive Annexure I) | Embedded in incident-response.md §1 severity classification. | **Implemented** |
-| KYC details of registered subscribers (for ISPs / data centers) | n/a — we are a SaaS provider, not an ISP / data center |
+| KYC details of registered subscribers (for ISPs / data centers) | n/a — we are a SaaS provider, not an ISP / data center | **n/a** |
 
 ### MeitY advisory on biometric data handling (general guidance)
 

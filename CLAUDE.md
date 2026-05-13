@@ -32,7 +32,7 @@ It does not contain product code. It is documentation, policy, and cross-cutting
 
 ## What this repo contains
 
-```
+```text
 /docs/
   /shared/
     security-policy.md         ← THE shared rules every repo follows

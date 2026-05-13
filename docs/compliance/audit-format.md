@@ -92,7 +92,8 @@ New actions require a PR that updates this file AND the canonical threat model (
 The hash chain (`chain_prev_hash`, `chain_self_hash` columns above, currently commented out) is planned for v2. The chain is keyed by `(tenant_id, environment)` — each tenant's audit log is its own chain.
 
 Per-row hash:
-```
+
+```text
 chain_self_hash = SHA-256(
   id || tenant_id || environment || actor_type || actor_id ||
   action || entity_type || entity_id || status || summary ||

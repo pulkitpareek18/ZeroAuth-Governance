@@ -103,7 +103,7 @@ For each attack: `Class` is STRIDE classification. `Component(s)` names which co
 | Component(s) | API (marketing surface in `public/`) |
 | Description | Helmet sets `script-src-attr 'none'`; the May 2026 review found two `onsubmit=` attributes failing silently in browsers. |
 | Mitigation summary | All inline handlers removed; forms use `addEventListener`. CSP enforced. |
-| Residual risk | Low — no inline handlers remain in `public/index.html`. CI `curl…|grep` confirms. Should be promoted to a real test. |
+| Residual risk | Low — no inline handlers remain in `public/index.html`. CI `curl … grep` confirms. Should be promoted to a real test. |
 
 ### A-09 — Console JWT theft via XSS in dashboard
 

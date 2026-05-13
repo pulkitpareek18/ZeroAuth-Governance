@@ -26,7 +26,7 @@ When the operational suite's W08 evidence-pack assembler runs, it appends a row 
 
 When the first release goes out, populate per this template:
 
-```
+```text
 Manifest for vYYYY-MM-DD.N:
 - docs/shared/security-policy.md @ <sha-256>
 - docs/shared/coding-standards.md @ <sha-256>

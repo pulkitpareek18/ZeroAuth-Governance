@@ -13,7 +13,7 @@ ZeroAuth's role: **Data Processor.** The tenant (e.g., HDFC Life, Star Health) i
 |---|---|---|---|
 | §4(2) | Lawful basis for processing | We process on behalf of the Data Fiduciary; their lawful basis applies. Our processing is governed by the Data Processing Agreement with each tenant. | **Implemented** (DPA template — TODO) |
 | §6 | Consent | We do not collect consent from Data Principals directly. The tenant manages consent and surfaces the verification flow to their users. | **Implemented** (architectural — we receive only commitments) |
-| §7 | Legitimate uses without consent | n/a — we process only on instruction from the Data Fiduciary |
+| §7 | Legitimate uses without consent | n/a — we process only on instruction from the Data Fiduciary | **n/a at processor level** |
 | §8(4) | Reasonable security safeguards | See [`../shared/security-policy.md`](../shared/security-policy.md) §§2, 3, 4, 9, 10. TLS 1.3, SHA-256 + Poseidon hashing, tenant-scoped queries, structured audit log. | **Implemented** |
 | §8(5) | Notify the Board of personal data breach | See [`../shared/breach-notification.md`](../shared/breach-notification.md). 72-hour clock from confirmation. | **Implemented** (procedure exists; not yet drilled) |
 | §8(6) | Notify affected Data Principals | We notify the tenant (Data Fiduciary) within 6h; the tenant notifies their Data Principals. | **Implemented** (procedure exists) |
@@ -24,10 +24,10 @@ ZeroAuth's role: **Data Processor.** The tenant (e.g., HDFC Life, Star Health) i
 | §12 | Right to correction / erasure | Tenant deletes via `DELETE /v1/users/:userId`; cascades to verifications + commitments. Audit-log rows for the user remain (immutable). | **Implemented** |
 | §13 | Right of grievance redressal | We do not face Data Principals directly. Tenant handles. | **n/a at processor level** |
 | §16 | Cross-border transfer | Data stays in `ap-south-1` (India) per [`../shared/security-policy.md` §5](../shared/security-policy.md). | **Partial** — need to verify VPS region and lock in via ADR |
-| §17 | Exemptions | n/a |
+| §17 | Exemptions | n/a | **n/a** |
 | §27 | Powers of the Data Protection Board | We cooperate per breach-notification.md and DPDP rules | **Implemented** (procedure) |
 | §28 | Inquiry by the Board | We retain audit logs 7 years per [`../shared/security-policy.md` §6.3](../shared/security-policy.md) | **Implemented** |
-| §33 | Penalties | n/a (this is the regulator's side) |
+| §33 | Penalties | n/a — this is the regulator's side | **n/a** |
 | §39 | Power to make rules | We track rule updates and re-review this mapping quarterly. Next review: 2026-08-13. | **Implemented** (process) |
 
 ## DPDP Rules (Draft 2025) — placeholder mapping
