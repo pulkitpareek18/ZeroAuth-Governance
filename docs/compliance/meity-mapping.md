@@ -1,7 +1,7 @@
 # Compliance mapping — MeitY guidelines + CERT-In directives
 
 > **Last reviewed by:** Pulkit Pareek on 2026-05-13
-> **Status:** v1 — DRAFT. Counsel review pending.
+> **Status:** v1 — **PROVISIONAL**. External counsel review is required before this mapping can be represented to a tenant or regulator as authoritative. Counsel engagement is open (ADR-0005, target ~2026-07-01).
 
 This file maps the Ministry of Electronics and Information Technology (MeitY) advisories and CERT-In directives applicable to ZeroAuth as an Indian-origin technology provider.
 

@@ -1,7 +1,7 @@
 # Compliance mapping — RBI Cyber Security Framework
 
 > **Last reviewed by:** Pulkit Pareek on 2026-05-13
-> **Status:** v1 — DRAFT. Applies when a tenant is an RBI-regulated entity (bank, NBFC, PSP). Counsel review pending.
+> **Status:** v1 — **PROVISIONAL**. Applies when a tenant is an RBI-regulated entity (bank, NBFC, PSP). External counsel review is required before this mapping can be represented to a tenant or regulator as authoritative. Counsel engagement is open (ADR-0005, target ~2026-07-01).
 
 This file maps the RBI Cyber Security Framework (Master Direction on Information Technology and Cyber Security) to ZeroAuth controls. ZeroAuth's role: **third-party service provider** to the regulated entity.
 
@@ -34,11 +34,11 @@ RBI requires regulated entities to oversee their service providers' cyber securi
 
 ## Open items
 
+- **External counsel engagement** (ADR-0005, target ~2026-07-01) — gates representation of this mapping as authoritative to any RBI-regulated tenant.
 - AES-256-GCM at-rest encryption on production Postgres.
 - IDS on the VPS (Wazuh? Falco? minimum: `fail2ban` on SSH).
 - DR drill scheduled.
 - Access review cadence — quarterly?
-- Counsel review of the entire mapping.
 
 ---
 

@@ -1,7 +1,7 @@
 # Compliance mapping — IRDAI Information & Cyber Security Guidelines
 
 > **Last reviewed by:** Pulkit Pareek on 2026-05-13
-> **Status:** v1 — DRAFT. Applies when a tenant is an IRDAI-regulated entity (insurer / intermediary). Counsel review pending.
+> **Status:** v1 — **PROVISIONAL**. Applies when a tenant is an IRDAI-regulated entity (insurer / intermediary). External counsel review is required before this mapping can be represented to a tenant or regulator as authoritative. Counsel engagement is open (ADR-0005, target ~2026-07-01).
 
 This file maps IRDAI's Information and Cyber Security Guidelines (the most recent revision applies — verify version against IRDAI portal) to specific ZeroAuth controls. ZeroAuth's role: **outsourced service provider** to the regulated insurer.
 
@@ -32,7 +32,8 @@ IRDAI's outsourcing framework requires the insurer (the tenant) to ensure their 
 
 ## Open items
 
-- Confirm current IRDAI Guidelines version applicable (2017? 2023 revision? 2024 amendments?). Counsel review.
+- **External counsel engagement** (ADR-0005, target ~2026-07-01) — gates everything below that requires interpretation of the current IRDAI Guidelines version.
+- Confirm current IRDAI Guidelines version applicable (2017 / 2023 revision / 2024 amendments) — needs counsel.
 - Off-host Postgres backup destination.
 - Standardize vendor exit / account closure procedure.
 - DW03 dependency drift watcher operational.

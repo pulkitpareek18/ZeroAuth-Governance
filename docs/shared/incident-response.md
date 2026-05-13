@@ -1,7 +1,9 @@
 # ZeroAuth Incident Response Runbook
 
 > **Last reviewed by:** Pulkit Pareek (technical), Amit Dua (governance) on 2026-05-13
-> **Status:** v1 — initial runbook. Counsel review pending before the regulator-notification clauses (steps 6–9) are considered final.
+> **Status:** v1 — runbook is operational but **PROVISIONAL** at steps 6 (customer notification), 7 (regulator notification), 8 (postmortem disclosure) until external DPO counsel is engaged. Engagement target: before first pilot SOW signing (~2026-07-01). See ADR-0005 (open) in `pulkitpareek18/ZeroAuth`.
+>
+> **Operating without counsel for an actual SEV-1 today is feasible but risky.** Specifically: no attorney-client privilege on the incident channel, no specialist who has run a DPBI submission before, no relationship to call at 2am. The founders accept this risk during the interim and treat counsel engagement as a hard blocker on first pilot SOW.
 
 This is the on-call runbook for any operational incident affecting ZeroAuth. For incidents involving customer data breach specifically, **also** follow [`breach-notification.md`](breach-notification.md) — that procedure has regulatory deadlines this one does not.
 
@@ -18,9 +20,11 @@ This is the on-call runbook for any operational incident affecting ZeroAuth. For
 | Role | Name | Channel | Backup |
 |---|---|---|---|
 | Incident commander (engineering) | Pulkit Pareek | (TODO: confirm Signal/phone for after-hours) | Amit Dua |
-| Incident commander (business / customer comms) | Amit Dua | (TODO: confirm phone) | — |
-| Legal counsel | Tarun Khurana (IP) + (TODO: DPO counsel name) | (TODO) | (TODO) |
-| Hosting / infra emergency | Pulkit Pareek | VPS root SSH (104.207.143.14) | n/a |
+| Incident commander (business / customer comms) | Amit Dua | (TODO: confirm phone) | Pulkit Pareek |
+| DPO function (interim) | Pulkit Pareek + Amit Dua jointly | same channels as incident commanders | — |
+| External DPO counsel | **NOT YET ENGAGED** — see ADR-0005 (open). Engagement target ~2026-07-01. | — | — |
+| IP counsel | **NOT YET ENGAGED** — see ADR-0005 (open). | — | — |
+| Hosting / infra emergency | Pulkit Pareek | VPS root SSH (`104.207.143.14`) | — |
 
 ## Steps
 
@@ -65,7 +69,7 @@ Detection sources:
 ### Step 6 — Notify customers (SEV-1 only)
 
 - If customer data was exposed: follow [`breach-notification.md`](breach-notification.md). Do not deviate.
-- If customer-impacting downtime > 30 minutes: email all affected tenant contacts within 24 hours with: incident summary, impact, fix deployed at (timestamp), what we're doing to prevent recurrence. CC counsel for approval before send.
+- If customer-impacting downtime > 30 minutes: email all affected tenant contacts within 24 hours with: incident summary, impact, fix deployed at (timestamp), what we're doing to prevent recurrence. **Once external counsel is engaged:** CC counsel for approval before send. **Interim:** both founders co-sign the draft before send.
 - Update `status.zeroauth.dev` *(planned)*.
 
 ### Step 7 — Regulator notification

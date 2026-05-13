@@ -1,7 +1,7 @@
 # Compliance mapping — DPDP Act 2023 + DPDP Rules (Draft 2025)
 
 > **Last reviewed by:** Pulkit Pareek on 2026-05-13
-> **Status:** v1 — DRAFT. Pending counsel review. Some clauses are mapped to roadmap items, not implemented controls; these are marked `Partial — see roadmap`.
+> **Status:** v1 — **PROVISIONAL**. The mapping below is founders' best-effort interpretation of the statute; external counsel review is required before any of it can be represented to a tenant or regulator as authoritative. Counsel engagement is open (ADR-0005, target ~2026-07-01). Some clauses map to roadmap items rather than implemented controls; these are marked `Partial — see roadmap`.
 
 This table maps clauses of the Digital Personal Data Protection Act 2023 (DPDP Act) and the draft DPDP Rules 2025 to specific ZeroAuth controls.
 
@@ -36,7 +36,8 @@ The draft DPDP Rules expand operational requirements for breach notification, co
 
 ## Open items
 
-- DPA template with tenants is not standardized. Each pilot SOW currently includes ad-hoc DPA clauses. Standardize before scaling.
+- **External DPO counsel engagement** (ADR-0005, target ~2026-07-01) — gates every "pending counsel review" line above.
+- DPA template with tenants is not standardized. Each pilot SOW currently includes ad-hoc DPA clauses. Standardize before scaling (requires counsel).
 - Data residency lock-in via ADR (production VPS region).
 - Automated programmatic age-gate (§9) at ZeroAuth layer — currently relies on tenant.
 - DPIA template for SDF tenants.
@@ -44,4 +45,4 @@ The draft DPDP Rules expand operational requirements for breach notification, co
 ---
 
 LAST_UPDATED: 2026-05-13
-NEXT_REVIEW: 2026-08-13 (quarterly) or upon DPDP Rules 2025 publication
+NEXT_REVIEW: 2026-08-13 (quarterly) or upon DPDP Rules 2025 publication or counsel engagement, whichever fires first

@@ -27,12 +27,13 @@ This is the cross-repo index of every Architecture Decision Record. Each entry l
 
 ## Open ADR candidates (to be filed)
 
-- ADR-0005 — Adopt zod for input validation (deferred from B01 quality bar)
-- ADR-0006 — Adopt Prisma (or equivalent) for schema migrations (deferred from B01 quality bar)
-- ADR-0007 — Verifier service split-out from `src/services/zkp.ts` (B02, Week 2)
-- ADR-0008 — Multisig owner on `DIDRegistry` contract (replaces A-07 single-key risk)
-- ADR-0009 — Off-host Postgres backup destination + cadence
-- ADR-0010 — At-rest encryption (AES-256-GCM) for production Postgres volumes
+- **ADR-0005 — Engage external DPO + IP counsel.** Hard deadline: before first pilot SOW signing (~2026-07-01). Blocks shipping the breach-notification procedure, DPDP/IRDAI/RBI compliance mappings, and DPA templates as authoritative to buyers. On the W05 Friday review agenda. Decision needed: which firm (specialist boutique like Ikigai Law / Spice Route / TRA Law, or a full-service firm with DPDP practice), retainer scope, monthly cost ceiling.
+- ADR-0006 — Adopt zod for input validation (deferred from B01 quality bar)
+- ADR-0007 — Adopt Prisma (or equivalent) for schema migrations (deferred from B01 quality bar)
+- ADR-0008 — Verifier service split-out from `src/services/zkp.ts` (B02, Week 2)
+- ADR-0009 — Multisig owner on `DIDRegistry` contract (replaces A-07 single-key risk)
+- ADR-0010 — Off-host Postgres backup destination + cadence
+- ADR-0011 — At-rest encryption (AES-256-GCM) for production Postgres volumes
 
 ---
 

@@ -77,13 +77,13 @@ It does not contain product code. It is documentation, policy, and cross-cutting
 - **Format**: markdown only
 - **Cross-references**: relative paths to other files in this repo; for cross-repo references, name the repo and the path: `pulkitpareek18/ZeroAuth: /docs/api_contract.md`
 - **Versioning**: every shared policy doc has a `LAST_UPDATED` field at the bottom; `RELEASES.md` records which version of each shared doc was in force at each evidence-pack publication
-- **Reviews**: changes to anything in `/docs/shared/` require two reviewers (Pulkit + Amit; counsel for DPDP-touching files). Enforced via `CODEOWNERS`
+- **Reviews**: changes to anything in `/docs/shared/` require two reviewers (Pulkit + Amit). External DPO counsel review is required for DPDP-touching files **once counsel is engaged** — until then, the founders sign off jointly and the file carries a `PROVISIONAL` banner. Enforced via `CODEOWNERS`
 
 ## Standing instructions
 
 1. **A change in this repo is consequential.** A change to `security-policy.md` propagates to every product repo via their CLAUDE.md. Always consider the blast radius before merging.
 
-2. **Two-reviewer rule on shared policy.** Pulkit + Amit on technical policy. Add counsel (DPO / Tarun Khurana) when DPDP, IRDAI, RBI, or IP clauses are affected.
+2. **Two-reviewer rule on shared policy.** Pulkit + Amit on technical policy. Add external DPO counsel review when DPDP, IRDAI, RBI, or IP clauses are affected — **once counsel is engaged**. Until then, the founders' joint sign-off is the gate and the file carries a `PROVISIONAL` banner. See ADR-0005 (open) for the engagement timeline.
 
 3. **Threat model canonical wins.** When a product repo's threat model contradicts `/docs/threat-model/canonical.md`, the canonical is authoritative; the product repo updates.
 
@@ -102,7 +102,7 @@ NEVER:
 - Reference a specific buyer by name in `/docs/shared/`
 - Reference an in-flight unreleased feature as "current" in `/docs/compliance/`
 - Edit `/docs/shared/security-policy.md` without two-reviewer sign-off
-- Edit `/docs/shared/breach-notification.md` without counsel review
+- Edit `/docs/shared/breach-notification.md` without (a) external DPO counsel review once engaged, OR (b) both founders' joint sign-off during the interim period
 
 ALWAYS:
 

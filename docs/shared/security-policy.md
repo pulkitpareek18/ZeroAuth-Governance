@@ -1,7 +1,7 @@
 # ZeroAuth Shared Security Policy
 
 > **Last reviewed by:** Pulkit Pareek (technical), Amit Dua (governance) on 2026-05-13
-> **Status:** v1 — initial draft. Awaiting DPO counsel review before clauses §3.4 (breach windows) and §5 (data residency) are considered final.
+> **Status:** v1 — initial draft. Sections §3 (cryptographic primitives) breach windows, §5 (data residency), §6 (audit logging), and §7 (vulnerability disclosure) are marked **PROVISIONAL** pending external DPO counsel engagement (see ADR-0005 in `pulkitpareek18/ZeroAuth` — engagement target before first pilot SOW signing, ~2026-07-01). Until counsel is engaged, the DPO function is filled jointly by Pulkit + Amit; risks of operating without privileged communications are accepted by the founders.
 
 This is the security policy every ZeroAuth repo agrees to. Every product repo's `CLAUDE.md` MUST link to this file. When a product repo's local policy contradicts this file, this file wins; the product repo updates.
 
@@ -82,7 +82,9 @@ To prevent overstating what ZeroAuth is, we NEVER use these phrases in code, com
 
 ## §12. Changes to this policy
 
-Two-reviewer rule: Pulkit + Amit. Counsel review (DPO + Tarun Khurana for IP) required for any change to §3 (cryptographic primitives), §5 (data residency), §6 (audit logging), or §7 (vulnerability disclosure).
+**Two-reviewer rule:** Pulkit + Amit. Both sign off on every change.
+
+**External counsel review** required for any change to §3 (cryptographic primitives), §5 (data residency), §6 (audit logging), or §7 (vulnerability disclosure) — **once counsel is engaged**. Until then, those changes go through the founders' joint sign-off and the affected section retains the `PROVISIONAL` marker. See ADR-0005 (open) for the engagement target (~2026-07-01).
 
 ---
 

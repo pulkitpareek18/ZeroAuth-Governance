@@ -2,11 +2,17 @@
 #
 # Path-based ownership. Every PR is reviewed by at least one owner of every
 # path it touches. For files under `docs/shared/` and `docs/compliance/`, two
-# reviewers are required (Pulkit + Amit; counsel as well for DPDP-touching).
+# reviewers are required (Pulkit + Amit).
 #
-# Counsel review is enforced manually (not via CODEOWNERS) because counsel
-# does not have GitHub access; reviewers note counsel sign-off in the PR
-# description before merging policy-touching changes.
+# External DPO counsel is NOT YET ENGAGED. See ADR-0005 (open) in
+# pulkitpareek18/ZeroAuth — engagement target ~2026-07-01, before first
+# pilot SOW signing. Until then, the founders' joint sign-off is the gate
+# and policy files retain `PROVISIONAL` banners.
+#
+# Once counsel is engaged: counsel review is enforced manually (not via
+# CODEOWNERS) because counsel typically does not have GitHub access;
+# reviewers note counsel sign-off in the PR description before merging
+# policy-touching changes.
 
 # Default — every file
 *                                       @pulkitpareek18
