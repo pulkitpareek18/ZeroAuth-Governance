@@ -20,7 +20,7 @@ IRDAI's outsourcing framework requires the insurer (the tenant) to ensure their 
 | Incident response | Documented runbook, drilled, regulator notification within 6 hours of confirmation | See [`../shared/incident-response.md`](../shared/incident-response.md). | **Implemented — drill pending** |
 | Business continuity | Backup, recovery, DR plan | Postgres + Redis in Docker; daily backups to (TODO: off-host destination). DR: rebuild from CI artifacts + DB restore. RTO 4h, RPO 24h. | **Partial — off-host backup pending** |
 | Third-party risk management | Vendor due diligence on every dep | DP6 (every dep is an ADR) enforced via `dep-add` skill. `scripts/check-dep-trail.sh` audits the lockfile against `/adr/`. | **Implemented** |
-| Vulnerability management | Periodic scanning, timely patching | Dependabot enabled on `pulkitpareek18/ZeroAuth`. DW03 (weekly dep drift watcher) planned. | **Partial — DW03 pending** |
+| Vulnerability management | Periodic scanning, timely patching | Dependabot enabled on `zeroauth-dev/ZeroAuth`. DW03 (weekly dep drift watcher) planned. | **Partial — DW03 pending** |
 | Cyber drill | Periodic | Drill cadence in breach-notification.md §9 (semi-annual). First drill: 2026-08. | **Pending — first drill 2026-08** |
 | Vendor exit clause | Customer data returnable on contract end | Tenant can `GET /v1/audit?export=full` at any time. Account closure procedure: TODO. | **Partial** |
 

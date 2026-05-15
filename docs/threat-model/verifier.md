@@ -1,7 +1,7 @@
 # Threat model — Verifier service (`@zeroauth/verifier`)
 
 > Extends [`canonical.md`](canonical.md).
-> **Status:** v1 — promoted from stub on 2026-05-15 after the verifier service was wired into production via PRs [#35](https://github.com/pulkitpareek18/ZeroAuth/pull/35) (deploy), [#36](https://github.com/pulkitpareek18/ZeroAuth/pull/36) (healthcheck hotfix), [#37](https://github.com/pulkitpareek18/ZeroAuth/pull/37) (SQLite audit log + hash chain). Implementation language: TypeScript on `snarkjs` per [ADR-0006](https://github.com/pulkitpareek18/ZeroAuth/blob/main/adr/0006-verifier-typescript-not-rust.md) in the API repo.
+> **Status:** v1 — promoted from stub on 2026-05-15 after the verifier service was wired into production via PRs [#35](https://github.com/zeroauth-dev/ZeroAuth/pull/35) (deploy), [#36](https://github.com/zeroauth-dev/ZeroAuth/pull/36) (healthcheck hotfix), [#37](https://github.com/zeroauth-dev/ZeroAuth/pull/37) (SQLite audit log + hash chain). Implementation language: TypeScript on `snarkjs` per [ADR-0006](https://github.com/zeroauth-dev/ZeroAuth/blob/main/adr/0006-verifier-typescript-not-rust.md) in the API repo.
 
 ## Component description
 
@@ -103,10 +103,10 @@ Persistent state:
 
 ## Pairs with
 
-- API-repo's [`src/services/zkp.ts`](https://github.com/pulkitpareek18/ZeroAuth/blob/main/src/services/zkp.ts) — the HTTP client that calls into this verifier.
-- API-repo's [`verifier/`](https://github.com/pulkitpareek18/ZeroAuth/tree/main/verifier) workspace — the verifier source.
-- [ADR-0006](https://github.com/pulkitpareek18/ZeroAuth/blob/main/adr/0006-verifier-typescript-not-rust.md) — language + architecture decision.
-- [Verifier design doc](https://github.com/pulkitpareek18/ZeroAuth/blob/main/docs/design/verifier-service-split.md) — full migration plan.
+- API-repo's [`src/services/zkp.ts`](https://github.com/zeroauth-dev/ZeroAuth/blob/main/src/services/zkp.ts) — the HTTP client that calls into this verifier.
+- API-repo's [`verifier/`](https://github.com/zeroauth-dev/ZeroAuth/tree/main/verifier) workspace — the verifier source.
+- [ADR-0006](https://github.com/zeroauth-dev/ZeroAuth/blob/main/adr/0006-verifier-typescript-not-rust.md) — language + architecture decision.
+- [Verifier design doc](https://github.com/zeroauth-dev/ZeroAuth/blob/main/docs/design/verifier-service-split.md) — full migration plan.
 - [`canonical.md`](canonical.md) — cross-repo threat model. A-02 (replayed proof verification) primary mitigation lives in the verifier today.
 - [`api.md`](api.md) — the API-side component threat model. A-02's API-side responsibility (timestamp window + nonce format) stays there.
 

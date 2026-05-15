@@ -1,4 +1,4 @@
-# Threat model — Dashboard (currently inside `pulkitpareek18/ZeroAuth: dashboard/`)
+# Threat model — Dashboard (currently inside `zeroauth-dev/ZeroAuth: dashboard/`)
 
 > Extends [`canonical.md`](canonical.md).
 > **Status:** v1. The dashboard exists today, served by Express at `/dashboard/*`. This file holds the dashboard-specific mitigation detail referenced from the canonical.

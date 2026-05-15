@@ -13,10 +13,10 @@ This is the cross-repo index of every Architecture Decision Record. Each entry l
 
 | # | Title | Status | Repo | Path | Date |
 |---|---|---|---|---|---|
-| 0001 | CLAUDE.md as the project constitution + prompt-suite engineering discipline | Accepted | `pulkitpareek18/ZeroAuth` | [adr/0001-prompt-suite-engineering-discipline.md](https://github.com/pulkitpareek18/ZeroAuth/blob/main/adr/0001-prompt-suite-engineering-discipline.md) | 2026-05-12 |
-| 0002 | Dashboard stack — Vite, not Next.js | Accepted | `pulkitpareek18/ZeroAuth` | [adr/0002-dashboard-stack-vite-not-nextjs.md](https://github.com/pulkitpareek18/ZeroAuth/blob/main/adr/0002-dashboard-stack-vite-not-nextjs.md) | 2026-05-12 |
-| 0003 | Adopt Playwright for dashboard E2E | Accepted | `pulkitpareek18/ZeroAuth` | [adr/0003-adopt-playwright-for-e2e.md](https://github.com/pulkitpareek18/ZeroAuth/blob/main/adr/0003-adopt-playwright-for-e2e.md) | 2026-05-12 |
-| 0004 | Governance lives in a separate repo (B06 — split from API repo) | Accepted | `pulkitpareek18/ZeroAuth` | [adr/0004-governance-in-separate-repo.md](https://github.com/pulkitpareek18/ZeroAuth/blob/main/adr/0004-governance-in-separate-repo.md) | 2026-05-13 |
+| 0001 | CLAUDE.md as the project constitution + prompt-suite engineering discipline | Accepted | `zeroauth-dev/ZeroAuth` | [adr/0001-prompt-suite-engineering-discipline.md](https://github.com/zeroauth-dev/ZeroAuth/blob/main/adr/0001-prompt-suite-engineering-discipline.md) | 2026-05-12 |
+| 0002 | Dashboard stack — Vite, not Next.js | Accepted | `zeroauth-dev/ZeroAuth` | [adr/0002-dashboard-stack-vite-not-nextjs.md](https://github.com/zeroauth-dev/ZeroAuth/blob/main/adr/0002-dashboard-stack-vite-not-nextjs.md) | 2026-05-12 |
+| 0003 | Adopt Playwright for dashboard E2E | Accepted | `zeroauth-dev/ZeroAuth` | [adr/0003-adopt-playwright-for-e2e.md](https://github.com/zeroauth-dev/ZeroAuth/blob/main/adr/0003-adopt-playwright-for-e2e.md) | 2026-05-12 |
+| 0004 | Governance lives in a separate repo (B06 — split from API repo) | Accepted | `zeroauth-dev/ZeroAuth` | [adr/0004-governance-in-separate-repo.md](https://github.com/zeroauth-dev/ZeroAuth/blob/main/adr/0004-governance-in-separate-repo.md) | 2026-05-13 |
 
 ## Status legend
 
