@@ -125,6 +125,18 @@ For each attack: `Class` is STRIDE classification. `Component(s)` names which co
 | Mitigation summary | Every console route reads `tenantId` from `(req as any).console.tenantId` set by `verifyConsoleToken`. Reviewer-enforced; no automated test. |
 | Residual risk | Medium — needs automated cross-tenant probe test that constructs a JWT for tenant A and tries body/query overrides. |
 
+## Verifier-component attacks (A-V-NN)
+
+Promoted 2026-05-15 alongside the [`verifier.md`](verifier.md) component file, which holds the per-attack mitigation detail. The verifier shipped to production today as a separate Docker container (`zeroauth-verifier`) per [ADR-0006](https://github.com/pulkitpareek18/ZeroAuth/blob/main/adr/0006-verifier-typescript-not-rust.md). See [verifier.md](verifier.md) for full STRIDE classification, mitigation depth, test status, and residual risk.
+
+| ID | Title | Class | Residual |
+|---|---|---|---|
+| A-V01 | Audit-log tamper via direct SQLite write | R, T | Medium-low — detectable via `/audit/verify-chain` but not preventable against VPS-root attacker. Cross-chain anchoring is v3. |
+| A-V02 | Verification key swap on disk between deploys | S, T | Medium — supply-chain trust in GitHub Actions + committed vkey. Hardens with vkey signature at trusted-setup time. |
+| A-V03 | Side-channel attacks on snarkjs (non-constant-time field ops) | I | Medium — accepted trade-off per ADR-0006. Revisit on multi-region or move to arkworks. |
+| A-V04 | Resource exhaustion via crafted proof inputs | D | Low — body limit + shape validation + upstream rate limit. |
+| A-V05 | Cross-tenant verification via spoofed tenantId in `/verify` request | S, E | Low — trust boundary is Docker network. HMAC headers on API→verifier requests is the roadmap mitigation. |
+
 ## Open items (no `A-NN` yet)
 
 - In-memory session store; restart wipes session continuity. Not exploitable today (JWTs are stateless).
