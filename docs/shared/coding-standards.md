@@ -22,7 +22,7 @@ This file is the shared style baseline. Per-repo `CLAUDE.md` files may extend, n
 ## §3. Error handling
 
 - API handlers return `{ error: '<machine_code>', message: '<human readable>' }` with appropriate HTTP status.
-- The machine codes are enumerated in [`pulkitpareek18/ZeroAuth: docs/error_codes.md`](https://github.com/pulkitpareek18/ZeroAuth/blob/main/docs/error_codes.md). New error codes get added there before being thrown.
+- The machine codes are enumerated in [`zeroauth-dev/ZeroAuth: docs/error_codes.md`](https://github.com/zeroauth-dev/ZeroAuth/blob/main/docs/error_codes.md). New error codes get added there before being thrown.
 - Stack traces never leak to API responses. Winston JSON log captures them server-side only.
 - Never swallow errors silently. `catch (e) { /* nothing */ }` is a CI failure (lint rule).
 
@@ -66,7 +66,7 @@ This file is the shared style baseline. Per-repo `CLAUDE.md` files may extend, n
 
 ## §10. Dependencies
 
-Adding any direct dependency requires an ADR. Use the `dep-add` skill ([`pulkitpareek18/ZeroAuth: .claude/skills/dep-add/SKILL.md`](https://github.com/pulkitpareek18/ZeroAuth/blob/main/.claude/skills/dep-add/SKILL.md)). No exceptions.
+Adding any direct dependency requires an ADR. Use the `dep-add` skill ([`zeroauth-dev/ZeroAuth: .claude/skills/dep-add/SKILL.md`](https://github.com/zeroauth-dev/ZeroAuth/blob/main/.claude/skills/dep-add/SKILL.md)). No exceptions.
 
 ## §11. What we DO NOT do
 

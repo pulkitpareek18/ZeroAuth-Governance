@@ -1,4 +1,4 @@
-# Threat model — API component (`pulkitpareek18/ZeroAuth`)
+# Threat model — API component (`zeroauth-dev/ZeroAuth`)
 
 > Extends [`canonical.md`](canonical.md). When this file and the canonical disagree, the canonical wins; update this file.
 > **Last reviewed by:** Pulkit Pareek on 2026-05-13
@@ -7,7 +7,7 @@ Most attacks in the canonical apply primarily to this component (the API is the 
 
 ## A-01 — Cross-tenant data read
 
-**Mitigation in this repo:** `src/middleware/tenant-auth.ts` resolves the tenant from the API key on every request and sets `(req as any).tenantContext = { tenantId, environment }`. Every service-layer function in `src/services/platform.ts` takes those as parameters and embeds them in the SQL WHERE. Express middleware augmentation is planned (see [`pulkitpareek18/ZeroAuth: CLAUDE.md`](https://github.com/pulkitpareek18/ZeroAuth/blob/main/CLAUDE.md) — "until we ship Express module augmentation").
+**Mitigation in this repo:** `src/middleware/tenant-auth.ts` resolves the tenant from the API key on every request and sets `(req as any).tenantContext = { tenantId, environment }`. Every service-layer function in `src/services/platform.ts` takes those as parameters and embeds them in the SQL WHERE. Express middleware augmentation is planned (see [`zeroauth-dev/ZeroAuth: CLAUDE.md`](https://github.com/zeroauth-dev/ZeroAuth/blob/main/CLAUDE.md) — "until we ship Express module augmentation").
 
 **Test coverage:** `tests/central-api.test.ts` exercises the scoping at the router layer.
 

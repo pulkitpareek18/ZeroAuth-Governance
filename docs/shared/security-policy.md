@@ -1,13 +1,13 @@
 # ZeroAuth Shared Security Policy
 
 > **Last reviewed by:** Pulkit Pareek (technical), Amit Dua (governance) on 2026-05-13
-> **Status:** v1 — initial draft. Sections §3 (cryptographic primitives) breach windows, §5 (data residency), §6 (audit logging), and §7 (vulnerability disclosure) are marked **PROVISIONAL** pending external DPO counsel engagement (see ADR-0005 in `pulkitpareek18/ZeroAuth` — engagement target before first pilot SOW signing, ~2026-07-01). Until counsel is engaged, the DPO function is filled jointly by Pulkit + Amit; risks of operating without privileged communications are accepted by the founders.
+> **Status:** v1 — initial draft. Sections §3 (cryptographic primitives) breach windows, §5 (data residency), §6 (audit logging), and §7 (vulnerability disclosure) are marked **PROVISIONAL** pending external DPO counsel engagement (see ADR-0005 in `zeroauth-dev/ZeroAuth` — engagement target before first pilot SOW signing, ~2026-07-01). Until counsel is engaged, the DPO function is filled jointly by Pulkit + Amit; risks of operating without privileged communications are accepted by the founders.
 
 This is the security policy every ZeroAuth repo agrees to. Every product repo's `CLAUDE.md` MUST link to this file. When a product repo's local policy contradicts this file, this file wins; the product repo updates.
 
 ## §1. Scope
 
-This policy applies to every ZeroAuth artifact: the central API (`pulkitpareek18/ZeroAuth`), the verifier service (planned), the IoT terminal firmware (planned), the mobile SDK (planned), the dashboard (currently in API repo), the Solidity contracts (`contracts/`), the Circom circuit (`circuits/`), and the docs site.
+This policy applies to every ZeroAuth artifact: the central API (`zeroauth-dev/ZeroAuth`), the verifier service (planned), the IoT terminal firmware (planned), the mobile SDK (planned), the dashboard (currently in API repo), the Solidity contracts (`contracts/`), the Circom circuit (`circuits/`), and the docs site.
 
 It does NOT apply to:
 
@@ -34,7 +34,7 @@ It does NOT apply to:
 
 ## §4. Tenant isolation
 
-1. Every query that returns customer data MUST be scoped by `(tenant_id, environment)` in the WHERE clause. Enforced in middleware (`src/middleware/tenant-auth.ts` in `pulkitpareek18/ZeroAuth`), not in handlers.
+1. Every query that returns customer data MUST be scoped by `(tenant_id, environment)` in the WHERE clause. Enforced in middleware (`src/middleware/tenant-auth.ts` in `zeroauth-dev/ZeroAuth`), not in handlers.
 2. No admin endpoint reveals data from more than one tenant in a single response.
 3. Cross-tenant access requires explicit ADR + customer consent on file + 30-day audit-log review.
 
@@ -57,7 +57,7 @@ Reports go to `security@zeroauth.dev`. Response within 72 hours. Coordinated dis
 
 ## §8. Dependencies
 
-Every new dependency is an ADR. Process is in [`pulkitpareek18/ZeroAuth: .claude/skills/dep-add/SKILL.md`](https://github.com/pulkitpareek18/ZeroAuth/blob/main/.claude/skills/dep-add/SKILL.md). No exceptions; the supply-chain risk is too high.
+Every new dependency is an ADR. Process is in [`zeroauth-dev/ZeroAuth: .claude/skills/dep-add/SKILL.md`](https://github.com/zeroauth-dev/ZeroAuth/blob/main/.claude/skills/dep-add/SKILL.md). No exceptions; the supply-chain risk is too high.
 
 ## §9. Network ingress
 
@@ -68,8 +68,8 @@ Every new dependency is an ADR. Process is in [`pulkitpareek18/ZeroAuth: .claude
 ## §10. Code review
 
 1. Every PR runs `lint + typecheck + test` in CI.
-2. PRs touching auth, crypto, audit, tenant boundaries, key handling, or network ingress MUST run the [`security-reviewer` subagent](https://github.com/pulkitpareek18/ZeroAuth/blob/main/.claude/agents/security-reviewer.md). Don't ask — just invoke.
-3. PRs touching `circuits/`, `contracts/`, `src/services/zkp.ts`, `src/services/identity.ts`, or anywhere a hash/commitment scheme is introduced MUST run the [`cryptographer-reviewer` subagent](https://github.com/pulkitpareek18/ZeroAuth/blob/main/.claude/agents/cryptographer-reviewer.md).
+2. PRs touching auth, crypto, audit, tenant boundaries, key handling, or network ingress MUST run the [`security-reviewer` subagent](https://github.com/zeroauth-dev/ZeroAuth/blob/main/.claude/agents/security-reviewer.md). Don't ask — just invoke.
+3. PRs touching `circuits/`, `contracts/`, `src/services/zkp.ts`, `src/services/identity.ts`, or anywhere a hash/commitment scheme is introduced MUST run the [`cryptographer-reviewer` subagent](https://github.com/zeroauth-dev/ZeroAuth/blob/main/.claude/agents/cryptographer-reviewer.md).
 
 ## §11. Language we forbid in writing
 

@@ -35,7 +35,7 @@ Manifest for vYYYY-MM-DD.N:
 - docs/threat-model/canonical.md @ <sha-256>
 - docs/compliance/dpdp-mapping.md @ <sha-256>
 - (any others per buyer's request — IRDAI for an insurer, RBI for a bank)
-- pulkitpareek18/ZeroAuth @ <commit SHA> (API contract + ADRs + threat model)
+- zeroauth-dev/ZeroAuth @ <commit SHA> (API contract + ADRs + threat model)
 ```
 
 ---

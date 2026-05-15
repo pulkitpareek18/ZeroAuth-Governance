@@ -25,10 +25,10 @@ It does not contain product code. It is documentation, policy, and cross-cutting
 
 | Repo | URL | What links here |
 |---|---|---|
-| `pulkitpareek18/ZeroAuth` | <https://github.com/pulkitpareek18/ZeroAuth> | Its `CLAUDE.md`, `docs/threat_model.md`, `adr/` (all link to the canonical versions here) |
-| `pulkitpareek18/ZeroAuth-Verifier` | (planned, Week 2 — B02) | Its CLAUDE.md will link here |
-| `pulkitpareek18/ZeroAuth-IoT` | (planned, Week 3 — B03) | — |
-| `pulkitpareek18/ZeroAuth-Mobile-SDK` | (planned, Week 5 — B04) | — |
+| `zeroauth-dev/ZeroAuth` | <https://github.com/zeroauth-dev/ZeroAuth> | Its `CLAUDE.md`, `docs/threat_model.md`, `adr/` (all link to the canonical versions here) |
+| `zeroauth-dev/ZeroAuth-Verifier` | (planned, Week 2 — B02) | Its CLAUDE.md will link here |
+| `zeroauth-dev/ZeroAuth-IoT` | (planned, Week 3 — B03) | — |
+| `zeroauth-dev/ZeroAuth-Mobile-SDK` | (planned, Week 5 — B04) | — |
 
 ## What this repo contains
 
@@ -75,7 +75,7 @@ It does not contain product code. It is documentation, policy, and cross-cutting
 ## Conventions
 
 - **Format**: markdown only
-- **Cross-references**: relative paths to other files in this repo; for cross-repo references, name the repo and the path: `pulkitpareek18/ZeroAuth: /docs/api_contract.md`
+- **Cross-references**: relative paths to other files in this repo; for cross-repo references, name the repo and the path: `zeroauth-dev/ZeroAuth: /docs/api_contract.md`
 - **Versioning**: every shared policy doc has a `LAST_UPDATED` field at the bottom; `RELEASES.md` records which version of each shared doc was in force at each evidence-pack publication
 - **Reviews**: changes to anything in `/docs/shared/` require two reviewers (Pulkit + Amit). External DPO counsel review is required for DPDP-touching files **once counsel is engaged** — until then, the founders sign off jointly and the file carries a `PROVISIONAL` banner. Enforced via `CODEOWNERS`
 
@@ -89,7 +89,7 @@ It does not contain product code. It is documentation, policy, and cross-cutting
 
 4. **Use the `adr-writer` skill** for any new shared-policy ADR.
 
-5. **Use the `compliance-mapper` subagent** when adding or modifying any compliance mapping. (Skill not yet installed — see ADR-0004 in `pulkitpareek18/ZeroAuth`.)
+5. **Use the `compliance-mapper` subagent** when adding or modifying any compliance mapping. (Skill not yet installed — see ADR-0004 in `zeroauth-dev/ZeroAuth`.)
 
 6. **Use the `threat-model-update` skill** when modifying the canonical threat model.
 

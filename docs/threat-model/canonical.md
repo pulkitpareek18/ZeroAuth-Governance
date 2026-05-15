@@ -1,7 +1,7 @@
 # ZeroAuth Canonical Threat Model
 
 > **Last reviewed by:** Pulkit Pareek on 2026-05-13
-> **Status:** v1 — synced from `pulkitpareek18/ZeroAuth: docs/threat_model.md` v0 (2026-05-12). Component-specific extensions live in sibling files (`api.md`, `verifier.md`, `iot.md`, `sdk.md`, `dashboard.md`).
+> **Status:** v1 — synced from `zeroauth-dev/ZeroAuth: docs/threat_model.md` v0 (2026-05-12). Component-specific extensions live in sibling files (`api.md`, `verifier.md`, `iot.md`, `sdk.md`, `dashboard.md`).
 
 This is the **cross-repo source of truth** for ZeroAuth's threat model. Every product repo's component-scoped threat model extends this file. When the canonical and a component file disagree, the canonical wins; the component file updates.
 
@@ -90,7 +90,7 @@ For each attack: `Class` is STRIDE classification. `Component(s)` names which co
 | | |
 |---|---|
 | Class | Elevation of privilege (E) |
-| Component(s) | Contracts (in `pulkitpareek18/ZeroAuth: contracts/`) |
+| Component(s) | Contracts (in `zeroauth-dev/ZeroAuth: contracts/`) |
 | Description | Wallet that deployed `DIDRegistry` is contract `owner`; key leak = full registry control. |
 | Mitigation summary | Key in `/opt/zeroauth/.env` only. Rotated once post-review. `npm run wallet:rotate` available. **Long-term:** multisig owner. |
 | Residual risk | Medium — single-key wallet is acceptable while patent value > stolen identity value, but only until multisig lands. |
@@ -127,7 +127,7 @@ For each attack: `Class` is STRIDE classification. `Component(s)` names which co
 
 ## Verifier-component attacks (A-V-NN)
 
-Promoted 2026-05-15 alongside the [`verifier.md`](verifier.md) component file, which holds the per-attack mitigation detail. The verifier shipped to production today as a separate Docker container (`zeroauth-verifier`) per [ADR-0006](https://github.com/pulkitpareek18/ZeroAuth/blob/main/adr/0006-verifier-typescript-not-rust.md). See [verifier.md](verifier.md) for full STRIDE classification, mitigation depth, test status, and residual risk.
+Promoted 2026-05-15 alongside the [`verifier.md`](verifier.md) component file, which holds the per-attack mitigation detail. The verifier shipped to production today as a separate Docker container (`zeroauth-verifier`) per [ADR-0006](https://github.com/zeroauth-dev/ZeroAuth/blob/main/adr/0006-verifier-typescript-not-rust.md). See [verifier.md](verifier.md) for full STRIDE classification, mitigation depth, test status, and residual risk.
 
 | ID | Title | Class | Residual |
 |---|---|---|---|
@@ -154,7 +154,7 @@ Promoted 2026-05-15 alongside the [`verifier.md`](verifier.md) component file, w
 
 ## Sync with product repos
 
-- `pulkitpareek18/ZeroAuth: docs/threat_model.md` — currently the most-current copy; this canonical was synced from it on 2026-05-13. Going forward, the canonical here is authoritative and the product repo links to it.
+- `zeroauth-dev/ZeroAuth: docs/threat_model.md` — currently the most-current copy; this canonical was synced from it on 2026-05-13. Going forward, the canonical here is authoritative and the product repo links to it.
 
 ---
 

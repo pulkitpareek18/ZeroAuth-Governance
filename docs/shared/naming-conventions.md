@@ -7,13 +7,13 @@
 
 | Service | Repo name | Internal name | Hostname |
 |---|---|---|---|
-| Central API | `pulkitpareek18/ZeroAuth` | `zeroauth-api` | `api.zeroauth.dev` (planned; today: `zeroauth.dev/v1/*`) |
-| Verifier | `pulkitpareek18/ZeroAuth-Verifier` (planned) | `zeroauth-verifier` | internal-only, behind API |
-| IoT firmware | `pulkitpareek18/ZeroAuth-IoT` (planned) | `zeroauth-iot` | (runs on Orange Pi devices) |
-| Mobile SDK | `pulkitpareek18/ZeroAuth-Mobile-SDK` (planned) | `zeroauth-sdk` | n/a (library) |
-| Dashboard | currently inside `pulkitpareek18/ZeroAuth: dashboard/` | `zeroauth-dashboard` | `zeroauth.dev/dashboard/` |
-| Docs site | inside `pulkitpareek18/ZeroAuth: website/` | `zeroauth-docs` | `zeroauth.dev/docs/` |
-| Governance | `pulkitpareek18/ZeroAuth-Governance` *(this repo)* | `zeroauth-governance` | n/a (docs only) |
+| Central API | `zeroauth-dev/ZeroAuth` | `zeroauth-api` | `api.zeroauth.dev` (planned; today: `zeroauth.dev/v1/*`) |
+| Verifier | `zeroauth-dev/ZeroAuth-Verifier` (planned) | `zeroauth-verifier` | internal-only, behind API |
+| IoT firmware | `zeroauth-dev/ZeroAuth-IoT` (planned) | `zeroauth-iot` | (runs on Orange Pi devices) |
+| Mobile SDK | `zeroauth-dev/ZeroAuth-Mobile-SDK` (planned) | `zeroauth-sdk` | n/a (library) |
+| Dashboard | currently inside `zeroauth-dev/ZeroAuth: dashboard/` | `zeroauth-dashboard` | `zeroauth.dev/dashboard/` |
+| Docs site | inside `zeroauth-dev/ZeroAuth: website/` | `zeroauth-docs` | `zeroauth.dev/docs/` |
+| Governance | `zeroauth-dev/ZeroAuth-Governance` *(this repo)* | `zeroauth-governance` | n/a (docs only) |
 
 ## Environment variables
 

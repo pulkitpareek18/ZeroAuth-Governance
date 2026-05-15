@@ -2,7 +2,7 @@
 
 The cross-repo source of truth for ZeroAuth security policy, compliance mappings, the canonical threat model, ADR index, release coordination, and evidence-pack sources.
 
-**This repo does not contain product code.** Product code lives in [`pulkitpareek18/ZeroAuth`](https://github.com/pulkitpareek18/ZeroAuth) (and future sibling repos for the verifier, IoT firmware, and mobile SDK).
+**This repo does not contain product code.** Product code lives in [`zeroauth-dev/ZeroAuth`](https://github.com/zeroauth-dev/ZeroAuth) (and future sibling repos for the verifier, IoT firmware, and mobile SDK).
 
 ## What's in here
 
@@ -35,4 +35,4 @@ CI runs both gates on every PR; merge blocks if either fails.
 
 ## License
 
-This documentation is licensed under [Creative Commons Attribution 4.0 International (CC-BY-4.0)](LICENSE). Reuse it, fork it, audit it — credit ZeroAuth (pulkitpareek18/ZeroAuth).
+This documentation is licensed under [Creative Commons Attribution 4.0 International (CC-BY-4.0)](LICENSE). Reuse it, fork it, audit it — credit ZeroAuth (zeroauth-dev/ZeroAuth).

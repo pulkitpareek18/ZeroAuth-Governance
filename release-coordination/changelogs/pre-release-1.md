@@ -1,7 +1,7 @@
 # Changelog — pre-release-1
 
 **Date:** 2026-05-12
-**Components:** API (`pulkitpareek18/ZeroAuth` @ `0d1741d`), Dashboard (bundled in API), Governance (`pre-release-1`)
+**Components:** API (`zeroauth-dev/ZeroAuth` @ `0d1741d`), Dashboard (bundled in API), Governance (`pre-release-1`)
 
 ## Summary
 
@@ -24,7 +24,7 @@ First production deploy. Central API live at `https://zeroauth.dev/v1/*`. Dashbo
 
 ## Governance
 
-- First version of this repo (`pulkitpareek18/ZeroAuth-Governance`) published
+- First version of this repo (`zeroauth-dev/ZeroAuth-Governance`) published
 - Shared docs: security-policy, coding-standards, naming-conventions, incident-response, breach-notification (DPDP §8(7))
 - Canonical threat model with A-01 through A-10
 - Compliance mappings: DPDP, IRDAI, RBI, MeitY
@@ -44,9 +44,9 @@ First production deploy. Central API live at `https://zeroauth.dev/v1/*`. Dashbo
 
 ## Cooperating PRs
 
-- `pulkitpareek18/ZeroAuth` #22 (Central API console — Day 1 deliverable)
-- `pulkitpareek18/ZeroAuth` #24 (Dashboard @types/node hotfix)
-- `pulkitpareek18/ZeroAuth` #25 (Marketing-site refactor — operational Block B item)
+- `zeroauth-dev/ZeroAuth` #22 (Central API console — Day 1 deliverable)
+- `zeroauth-dev/ZeroAuth` #24 (Dashboard @types/node hotfix)
+- `zeroauth-dev/ZeroAuth` #25 (Marketing-site refactor — operational Block B item)
 
 ---
 

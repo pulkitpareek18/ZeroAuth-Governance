@@ -53,10 +53,10 @@ CI runs `npm run check-checksums` and fails the build if any tracked file's actu
 
 These live in product repos; their hashes are tracked in the product repo's own evidence-pack manifest:
 
-- `pulkitpareek18/ZeroAuth: docs/api_contract.md`
-- `pulkitpareek18/ZeroAuth: docs/error_codes.md`
-- `pulkitpareek18/ZeroAuth: docs/threat_model.md` (will be deprecated in favor of `canonical.md` here)
-- `pulkitpareek18/ZeroAuth: adr/*.md`
+- `zeroauth-dev/ZeroAuth: docs/api_contract.md`
+- `zeroauth-dev/ZeroAuth: docs/error_codes.md`
+- `zeroauth-dev/ZeroAuth: docs/threat_model.md` (will be deprecated in favor of `canonical.md` here)
+- `zeroauth-dev/ZeroAuth: adr/*.md`
 
 ---
 

@@ -1,7 +1,7 @@
 # ZeroAuth Incident Response Runbook
 
 > **Last reviewed by:** Pulkit Pareek (technical), Amit Dua (governance) on 2026-05-13
-> **Status:** v1 — runbook is operational but **PROVISIONAL** at steps 6 (customer notification), 7 (regulator notification), 8 (postmortem disclosure) until external DPO counsel is engaged. Engagement target: before first pilot SOW signing (~2026-07-01). See ADR-0005 (open) in `pulkitpareek18/ZeroAuth`.
+> **Status:** v1 — runbook is operational but **PROVISIONAL** at steps 6 (customer notification), 7 (regulator notification), 8 (postmortem disclosure) until external DPO counsel is engaged. Engagement target: before first pilot SOW signing (~2026-07-01). See ADR-0005 (open) in `zeroauth-dev/ZeroAuth`.
 >
 > **Operating without counsel for an actual SEV-1 today is feasible but risky.** Specifically: no attorney-client privilege on the incident channel, no specialist who has run a DPBI submission before, no relationship to call at 2am. The founders accept this risk during the interim and treat counsel engagement as a hard blocker on first pilot SOW.
 
